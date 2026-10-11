@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261009-04-61a833b","C":{"Abril Fatface":"YACgEZbkUVE,0","Albert Sans":"YAHO2HRfeh4,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Barlow":"YAFdJsyuOPM,1","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Sans":"YAHO2bKyaSQ,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Libre Caslon Display":"YAHO2XhLmt0,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Public Sans":"YAFdJj8NdaU,1","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Sarabun":"YAFdJssSnME,0","Schibsted Grotesk":"YAHO2sWydRk,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/3ea5843eacd3e51f.telemetry_sdk.js" integrity="sha512-1IT905GQp6Xezy7dJYJjQl6KtI/PDxD5Vu755gJMNA+luF1QkRT8rHzF+xP7Ekem4HWP8sPFcQQAmx6FCSGaMg=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoBite Lunch Ordering App</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--leaf:#1f6b45;--deep:#153d2c;--sun:#f6bf3b;--cream:#fff9eb;--ink:#243128;--line:#dce6d8;--soft:#eff5ea}
+    *{box-sizing:border-box}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream)}
+    .app-shell{width:100%;min-height:calc(100 * min(var(--vh, 1vh), 1vh));background:radial-gradient(circle at 78% 3%,#fff0b7 0,transparent 25rem),var(--cream)}
+    .brand-font{font-family:"Fraunces",serif}.nav-item{transition:.2s}.nav-item:hover,.nav-item.active{background:#e1efda;color:var(--deep);font-weight:700}
+    .view{display:none}.view.active{display:block;animation:rise .35s ease both}@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+    .meal-card{border:1px solid var(--line);background:#fff;border-radius:1.25rem;overflow:hidden;box-shadow:0 5px 18px rgba(40,68,40,.06);transition:.2s}.meal-card:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(40,68,40,.12)}.meal-card.selected{outline:3px solid var(--sun)}
+    .size-choice input,.drink-choice input,.water-choice input{position:absolute;opacity:0}.size-choice label,.drink-choice label,.water-choice label{display:block;cursor:pointer;border:1px solid #cbd8c7;border-radius:.7rem;padding:.55rem .65rem;font-size:.8rem;font-weight:700}.size-choice input:checked+label,.drink-choice input:checked+label,.water-choice input:checked+label{background:var(--deep);color:#fff;border-color:var(--deep)}
+    .focus-ring:focus-visible,button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #e79900;outline-offset:3px}
+    @media(max-width:900px){.layout{display:block}.side-nav{position:sticky;top:0;z-index:10;display:flex;overflow:auto;white-space:nowrap;padding:.6rem;background:#153d2c}.side-nav .brand,.side-nav .nav-label{display:none}.side-nav button{flex:0 0 auto;color:#e9f5df}.side-nav button.active{color:#153d2c}.main-area{padding:1rem}}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/263f7f1ec427fef1.data_sdk.js" type="text/javascript" integrity="sha512-G5r5+ZpgQ1ELqZ8tI9imlWClKvYZ57SrzbGr898u8le5l2OuBwnWDOf9qbb9mCGSCmLi/3zszXyL+nX96lu7Lg=="></script>
+  <script src="/_sdk/7f51878a26dda571.editing_sdk.js" type="text/javascript" integrity="sha512-lv2tc4rONGhIWbY0ih8IjIqw943uiwvC9BM8dCj48SpTnOr728gJkoyMnfD0Yfa9KbBgBGdq6uAFyQuDfezvEg=="></script>
+  <script src="/_sdk/221ab7571fc66e1b.resizing_sdk.js" type="text/javascript" integrity="sha512-brXJ8PEVMWyvFfRXR3J+lXcBL9xcTCDHg4wYW7JDpQNdbOBkBezAQsQLUeUc2BOFREYS4N9GREjyhzX1N1VFdA=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(255, 249, 235);">
+  <div class="app-shell">
+   <div class="layout min-h-screen grid grid-cols-[250px_1fr]">
+    <aside class="side-nav bg-[#153d2c] p-5 text-white" aria-label="EcoBite section navigation">
+     <div class="brand mb-8 px-2">
+      <div class="flex items-center gap-2">
+       <span class="grid h-9 w-9 place-items-center rounded-full bg-[#f6bf3b] text-[#153d2c]"><i data-lucide="leaf" class="h-5 w-5"></i></span><strong class="brand-font text-2xl">EcoBite</strong>
+      </div>
+      <p class="mt-3 text-sm leading-5 text-[#dcebd7]">Fresh Jamaican lunches with an easy, thoughtful ordering flow.</p>
+     </div>
+     <p class="nav-label mb-2 px-3 text-xs font-bold uppercase tracking-[.16em] text-[#a9c3a6]">Your order journey</p>
+     <nav class="space-y-1" aria-label="Primary"><button class="nav-item active w-full rounded-xl px-3 py-2 text-left text-sm" data-view="home">1. EcoBite</button> <button class="nav-item w-full rounded-xl px-3 py-2 text-left text-sm" data-view="personal">2. Personal Form</button> <button class="nav-item w-full rounded-xl px-3 py-2 text-left text-sm" data-view="daily">3. Daily Lunch</button> <button class="nav-item w-full rounded-xl px-3 py-2 text-left text-sm" data-view="delivery">4. Home Food Delivery</button> <button class="nav-item w-full rounded-xl px-3 py-2 text-left text-sm" data-view="summary">5. Order Summary</button> <button class="nav-item w-full rounded-xl px-3 py-2 text-left text-sm" data-view="nutrition">6. Nutrition Guide</button> <button class="nav-item w-full rounded-xl px-3 py-2 text-left text-sm" data-view="help">7. Help &amp; Contact</button> <button class="nav-item w-full rounded-xl px-3 py-2 text-left text-sm" data-view="settings">8. Settings &amp; Code</button>
+     </nav>
+    </aside>
+    <main class="main-area min-w-0 p-5 md:p-9">
+     <div id="notice" class="mb-4 hidden rounded-xl border px-4 py-3 text-sm" role="status" aria-live="polite"></div>
+     <section id="home" class="view active" aria-labelledby="home-title">
+      <div class="overflow-hidden rounded-[2rem] bg-[#153d2c] text-white shadow-xl">
+       <div class="grid items-center lg:grid-cols-2">
+        <div class="p-7 md:p-12">
+         <div class="mb-7 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-[#fff0b7]">
+          <i data-lucide="sprout" class="h-4 w-4"></i><span data-template-id="home-badge" class="canva-tag" style="color: rgb(255, 240, 183); font-weight: 700; font-style: normal; font-size: 16px;">Jamaican lunch, thoughtfully packed</span>
+         </div>
+         <p data-template-id="home-wordmark" class="canva-text brand-font text-5xl font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">EcoBite</p>
+         <h1 id="home-title" data-template-id="home-slogan" class="canva-text brand-font mt-3 max-w-xl text-3xl leading-tight" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 32px;">Nutritious Jamaican lunches, made easy</h1>
+         <p data-template-id="home-welcome" class="canva-text mt-5 max-w-xl leading-7 text-[#e4f0db]" style="color: rgb(228, 240, 219); font-weight: 400; font-style: normal; font-size: 16px;">Welcome to a simpler way to choose nourishing Jamaican lunch plates. Begin with your personal form, then select a daily lunch.</p>
+         <div class="mt-8 flex flex-wrap gap-3"><button data-template-id="start-form-button" class="canva-button focus-ring rounded-xl bg-[#f6bf3b] px-5 py-3 font-bold text-[#153d2c]" type="button" onclick="go('personal')" style="background: rgb(246, 191, 59); color: rgb(21, 61, 44); font-weight: 700; font-style: normal; font-size: 16px;">Start personal form</button> <button data-template-id="daily-home-button" class="canva-button focus-ring rounded-xl border border-white/50 px-5 py-3 font-bold" type="button" onclick="guardDaily()" style="background: transparent; color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Daily Lunch</button> <button data-template-id="delivery-home-button" class="canva-button focus-ring rounded-xl border border-white/50 px-5 py-3 font-bold" type="button" onclick="go('delivery')" style="background: transparent; color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Tap for home food delivery</button>
+         </div>
+        </div><img data-template-id="home-food-image" class="canva-image h-72 w-full object-cover lg:h-full" loading="lazy" src="https://images.pexels.com/photos/27556985/pexels-photo-27556985.jpeg" alt="Caribbean jerk chicken served with rice and beans and fried plantains on a plate">
+       </div>
+      </div>
+     </section>
+     <section id="personal" class="view max-w-3xl" aria-labelledby="personal-title">
+      <p class="text-sm font-bold uppercase tracking-widest text-[#1f6b45]">Step 1 of 3</p>
+      <h1 id="personal-title" data-template-id="personal-title" class="canva-text brand-font mt-2 text-4xl" style="color: rgb(21, 61, 44); font-weight: 700; font-style: normal; font-size: 32px;">Personal Form</h1>
+      <p data-template-id="personal-intro" class="canva-text mt-3 text-slate-600" style="color: rgb(83, 98, 87); font-weight: 400; font-style: normal; font-size: 16px;">Please complete all fields before selecting your lunch.</p>
+      <form id="personal-form" class="mt-7 rounded-3xl border border-[#dce6d8] bg-white p-6 shadow-sm" novalidate="">
+       <div class="grid gap-5 md:grid-cols-2">
+        <div>
+         <label for="customer-name" data-template-id="name-label" class="canva-text mb-2 block font-bold" style="color: rgb(36, 49, 40); font-weight: 700; font-style: normal; font-size: 16px;">Name</label><input id="customer-name" required="" class="focus-ring w-full rounded-xl border border-[#b9cdb5] px-4 py-3" type="text">
+        </div>
+        <div>
+         <label for="customer-date" data-template-id="date-label" class="canva-text mb-2 block font-bold" style="color: rgb(36, 49, 40); font-weight: 700; font-style: normal; font-size: 16px;">Date</label><input id="customer-date" required="" class="focus-ring w-full rounded-xl border border-[#b9cdb5] px-4 py-3" type="date">
+        </div>
+        <div>
+         <label for="customer-signature" data-template-id="signature-label" class="canva-text mb-2 block font-bold" style="color: rgb(36, 49, 40); font-weight: 700; font-style: normal; font-size: 16px;">Signature</label><input id="customer-signature" required="" class="focus-ring w-full rounded-xl border border-[#b9cdb5] px-4 py-3" type="text">
+        </div>
+        <div><label for="customer-grade" data-template-id="grade-label" class="canva-text mb-2 block font-bold" style="color: rgb(36, 49, 40); font-weight: 700; font-style: normal; font-size: 16px;">Grade</label> <select id="customer-grade" required="" class="focus-ring w-full rounded-xl border border-[#b9cdb5] bg-white px-4 py-3"> <option value="">Select Grade</option><option value="Grade 7">Grade 7</option><option value="Grade 8">Grade 8</option><option value="Grade 9">Grade 9</option><option value="Grade 10">Grade 10</option><option value="Grade 11">Grade 11</option><option value="Sixth Form">Sixth Form</option><option value="Teacher">Teacher</option> </select>
+        </div>
+       </div>
+       <p id="personal-error" class="mt-4 hidden text-sm font-semibold text-red-700" role="alert"></p>
+       <div class="mt-6 flex justify-between gap-4">
+        <button type="button" class="focus-ring rounded-xl px-4 py-3 font-bold text-[#1f6b45]" onclick="go('home')">Back</button><button id="personal-submit" data-template-id="personal-submit" class="canva-button focus-ring rounded-xl bg-[#94a89a] px-5 py-3 font-bold text-white disabled:cursor-not-allowed" type="submit" disabled="" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Save and choose lunch</button>
+       </div>
+      </form>
+     </section>
+     <section id="daily" class="view" aria-labelledby="daily-title">
+      <p class="text-sm font-bold uppercase tracking-widest text-[#1f6b45]">Step 2 of 3</p>
+      <h1 id="daily-title" data-template-id="daily-title" class="canva-text brand-font mt-2 text-4xl" style="color: rgb(21, 61, 44); font-weight: 700; font-style: normal; font-size: 32px;">Daily Lunch</h1>
+      <p data-template-id="daily-intro" class="canva-text mt-2 text-slate-600" style="color: rgb(83, 98, 87); font-weight: 400; font-style: normal; font-size: 16px;">Select complete, balanced Jamaican-style lunch plates. Choose a size and quantity for each meal.</p>
+      <div id="daily-meals" class="mt-7 grid gap-5 sm:grid-cols-2 xl:grid-cols-4"></div>
+      <section class="mt-7 rounded-3xl border border-[#dce6d8] bg-white p-6" aria-labelledby="water-title">
+       <h2 id="water-title" data-template-id="water-title" class="canva-text font-bold" style="color: rgb(21, 61, 44); font-weight: 700; font-style: normal; font-size: 20px;">Water with your meal</h2>
+       <p data-template-id="water-helper" class="canva-text mt-1 text-sm text-slate-600" style="color: rgb(83, 98, 87); font-weight: 400; font-style: normal; font-size: 16px;">Water is included with every Daily Lunch. You can decline it and choose one drink instead.</p>
+       <div class="mt-4 grid gap-3 md:grid-cols-2">
+        <div class="water-choice relative">
+         <input id="water-yes" name="water-choice" type="radio" value="water" checked=""><label for="water-yes">Water included</label>
+        </div>
+        <div class="water-choice relative">
+         <input id="water-no" name="water-choice" type="radio" value="drink"><label for="water-no">No water — choose a drink instead</label>
+        </div>
+       </div>
+       <div id="drinks-section" class="mt-6 hidden border-t border-[#dce6d8] pt-5" aria-labelledby="drinks-title">
+        <h3 id="drinks-title" data-template-id="drinks-title" class="canva-text font-bold" style="color: rgb(21, 61, 44); font-weight: 700; font-style: normal; font-size: 20px;">Drinks</h3>
+        <p data-template-id="drinks-helper" class="canva-text mt-1 text-sm text-slate-600" style="color: rgb(83, 98, 87); font-weight: 400; font-style: normal; font-size: 16px;">Choose one drink when water has been declined.</p>
+        <div id="drink-options" class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"></div>
+       </div>
+      </section>
+      <aside class="sticky bottom-4 mt-7 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-[#c7d8bd] bg-[#eff5ea] p-4 shadow-lg">
+       <div>
+        <p class="text-sm text-slate-600">Daily order total</p>
+        <p id="daily-total" class="brand-font text-3xl font-bold">JMD 0</p>
+        <p id="daily-water-line" class="mt-1 text-sm font-semibold text-[#1f6b45]">Water included</p>
+       </div>
+       <div class="flex gap-3">
+        <button class="focus-ring rounded-xl px-4 py-3 font-bold text-[#1f6b45]" type="button" onclick="go('personal')">Back</button><button class="focus-ring rounded-xl bg-[#1f6b45] px-5 py-3 font-bold text-white" type="button" onclick="submitDaily()">Continue to summary</button>
+       </div>
+      </aside>
+     </section>
+     <section id="delivery" class="view max-w-3xl" aria-labelledby="delivery-title">
+      <p class="text-sm font-bold uppercase tracking-widest text-[#1f6b45]">Optional service</p>
+      <h1 id="delivery-title" data-template-id="delivery-title" class="canva-text brand-font mt-2 text-4xl" style="color: rgb(21, 61, 44); font-weight: 700; font-style: normal; font-size: 32px;">Home Food Delivery</h1>
+      <div id="delivery-gate" class="mt-6 rounded-2xl border border-[#f0c85d] bg-[#fff5ce] p-5" aria-live="polite"></div>
+      <form id="delivery-form" class="mt-5 hidden rounded-3xl border border-[#dce6d8] bg-white p-6" novalidate="">
+       <p data-template-id="delivery-intro" class="canva-text mb-5 text-slate-600" style="color: rgb(83, 98, 87); font-weight: 400; font-style: normal; font-size: 16px;">Your Personal Form and Daily Lunch order are complete. Add delivery details for your request.</p>
+       <div class="grid gap-5">
+        <div>
+         <label for="delivery-meal" class="mb-2 block font-bold">Daily lunch selection</label><select id="delivery-meal" class="focus-ring w-full rounded-xl border border-[#b9cdb5] px-4 py-3"></select>
+        </div>
+        <div>
+         <label for="delivery-address" class="mb-2 block font-bold">Address</label><textarea id="delivery-address" required="" class="focus-ring w-full rounded-xl border border-[#b9cdb5] px-4 py-3" rows="2"></textarea>
+        </div>
+        <div>
+         <label for="delivery-parish" class="mb-2 block font-bold">Parish</label><input id="delivery-parish" required="" class="focus-ring w-full rounded-xl border border-[#b9cdb5] px-4 py-3" type="text">
+        </div>
+        <div>
+         <label for="delivery-notes" class="mb-2 block font-bold">Delivery instructions <span class="font-normal text-slate-500">(optional)</span></label><textarea id="delivery-notes" class="focus-ring w-full rounded-xl border border-[#b9cdb5] px-4 py-3" rows="3"></textarea>
+        </div>
+       </div>
+       <p id="delivery-summary-line" class="mt-5 rounded-xl bg-[#eff5ea] p-3 text-sm"></p>
+       <p id="delivery-error" class="mt-3 hidden text-sm font-semibold text-red-700" role="alert"></p>
+       <div class="mt-5 flex justify-between">
+        <button type="button" class="focus-ring font-bold text-[#1f6b45]" onclick="go('daily')">Back to meals</button><button id="delivery-submit" data-template-id="delivery-submit" class="canva-button focus-ring rounded-xl bg-[#1f6b45] px-5 py-3 font-bold text-white" type="submit" style="background: rgb(31, 107, 69); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Request home delivery</button>
+       </div>
+      </form>
+     </section>
+     <section id="summary" class="view max-w-4xl" aria-labelledby="summary-title">
+      <p class="text-sm font-bold uppercase tracking-widest text-[#1f6b45]">Review your order</p>
+      <h1 id="summary-title" data-template-id="summary-title" class="canva-text brand-font mt-2 text-4xl" style="color: rgb(21, 61, 44); font-weight: 700; font-style: normal; font-size: 32px;">Order Summary</h1>
+      <div id="summary-content" class="mt-6 rounded-3xl border border-[#dce6d8] bg-white p-6 shadow-sm"></div>
+      <div class="mt-5 flex flex-wrap gap-3">
+       <button class="focus-ring rounded-xl border border-[#1f6b45] px-4 py-3 font-bold text-[#1f6b45]" type="button" onclick="go('personal')">Edit personal form</button><button class="focus-ring rounded-xl border border-[#1f6b45] px-4 py-3 font-bold text-[#1f6b45]" type="button" onclick="go('daily')">Return to meals</button><button data-template-id="confirm-order-button" class="canva-button focus-ring rounded-xl bg-[#1f6b45] px-5 py-3 font-bold text-white" type="button" onclick="confirmOrder()" style="background: rgb(31, 107, 69); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Continue to confirmation</button>
+      </div>
+     </section>
+     <section id="confirmation" class="view max-w-3xl text-center" aria-labelledby="confirmation-title">
+      <div class="rounded-[2rem] bg-[#153d2c] p-8 text-white md:p-12">
+       <div class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-[#f6bf3b] text-[#153d2c]">
+        <i data-lucide="check" class="h-9 w-9"></i>
+       </div>
+       <h1 id="confirmation-title" data-template-id="confirmation-title" class="canva-text brand-font mt-6 text-4xl" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 32px;">Order received</h1>
+       <p id="confirmation-recap" class="mt-4 text-[#e4f0db]" aria-live="polite"></p><button data-template-id="new-order-button" class="canva-button focus-ring mt-7 rounded-xl bg-[#f6bf3b] px-5 py-3 font-bold text-[#153d2c]" type="button" onclick="newOrder()" style="background: rgb(246, 191, 59); color: rgb(21, 61, 44); font-weight: 700; font-style: normal; font-size: 16px;">Start a new order</button>
+      </div>
+     </section>
+     <section id="nutrition" class="view max-w-4xl" aria-labelledby="nutrition-title">
+      <h1 id="nutrition-title" data-template-id="nutrition-title" class="canva-text brand-font text-4xl" style="color: rgb(21, 61, 44); font-weight: 700; font-style: normal; font-size: 32px;">Nutrition Guide</h1>
+      <p data-template-id="nutrition-intro" class="canva-text mt-3 text-slate-600" style="color: rgb(83, 98, 87); font-weight: 400; font-style: normal; font-size: 16px;">A balanced Jamaican-inspired lunch can include a protein food, an energy food, and colourful vegetables or fruit.</p>
+     </section>
+     <section id="help" class="view max-w-4xl" aria-labelledby="help-title">
+      <h1 id="help-title" data-template-id="help-title" class="canva-text brand-font text-4xl" style="color: rgb(21, 61, 44); font-weight: 700; font-style: normal; font-size: 32px;">Help &amp; Contact</h1>
+      <div class="mt-6 space-y-3">
+       <details class="rounded-2xl border border-[#dce6d8] bg-white p-5">
+        <summary class="cursor-pointer font-bold">Who can request home delivery?</summary>
+        <p class="mt-3 text-sm text-slate-600">Complete and save your Personal Form, then add at least one Daily Lunch meal. Water is included unless you choose a drink instead.</p>
+       </details>
+      </div>
+     </section>
+     <section id="settings" class="view max-w-4xl" aria-labelledby="settings-title">
+      <h1 id="settings-title" data-template-id="settings-title" class="canva-text brand-font text-4xl" style="color: rgb(21, 61, 44); font-weight: 700; font-style: normal; font-size: 32px;">Settings &amp; Code</h1>
+      <p data-template-id="settings-intro" class="canva-text mt-2 text-slate-600" style="color: rgb(83, 98, 87); font-weight: 400; font-style: normal; font-size: 16px;">Owner controls are separate from customer ordering. Update placeholders and meal prices here.</p>
+     </section>
+    </main>
+   </div>
+  </div>
+  <script>
+const meals=[
+  {id:"jerk",name:"Jerk chicken",desc:"Jerk chicken, rice and peas, steamed cabbage and ripe plantain.",note:"Complete plate · contains chicken"},
+  {id:"stewchicken",name:"Brown-stew chicken",desc:"Brown-stew chicken, rice, callaloo and cucumber.",note:"Complete plate · contains chicken"},
+  {id:"escovitch",name:"Escovitch fish",desc:"Escovitch fish, festival, steamed vegetables and fruit.",note:"Complete plate · contains fish"},
+  {id:"curry",name:"Curry chicken",desc:"Curry chicken, ground provisions and cabbage.",note:"Complete plate · contains chicken"},
+  {id:"ackee",name:"Ackee and saltfish",desc:"Ackee and saltfish, boiled green banana and tomato-cucumber salad.",note:"Complete plate · contains fish"},
+  {id:"ital",name:"Vegan ital stew",desc:"Vegan ital stew, rice and peas and callaloo.",note:"Vegan complete plate"},
+  {id:"tofu",name:"Grilled jerk tofu",desc:"Grilled jerk tofu, sweet potato, steamed vegetables and mango.",note:"Vegan complete plate"},
+  {id:"stewfish",name:"Brown-stew fish",desc:"Brown-stew fish, rice and peas and mixed vegetables.",note:"Complete plate · contains fish"}
+];
+const drinks=[
+  {name:"Orange juice",price:200},{name:"Coconut water",price:250},{name:"Pineapple juice",price:250},
+  {name:"Sorrel",price:300},{name:"Ginger beer",price:300},{name:"Carrot juice",price:400}
+];
+const validGrades=["Grade 7","Grade 8","Grade 9","Grade 10","Grade 11","Sixth Form","Teacher"];
+const state={form:null,personal:false,daily:[],waterAccepted:true,drink:null,delivery:null,lastOrder:null,prices:{Small:700,Medium:900,Large:1100},records:[]};
+const draft={};
+const fmt=n=>"JMD "+Number(n||0).toLocaleString("en-JM");
+function notice(message,kind="ok"){const e=document.getElementById("notice");e.className="mb-4 rounded-xl border px-4 py-3 text-sm "+(kind==="error"?"border-red-300 bg-red-50 text-red-800":"border-green-300 bg-green-50 text-green-800");e.textContent=message;e.classList.remove("hidden")}
+function go(id){document.querySelectorAll(".view").forEach(v=>v.classList.toggle("active",v.id===id));document.querySelectorAll(".nav-item").forEach(b=>b.classList.toggle("active",b.dataset.view===id));if(id==="delivery")renderDelivery();if(id==="summary")renderSummary();window.scrollTo({top:0,behavior:"smooth"})}
+function validPersonal(){return !!(state.personal&&state.form&&state.form.name&&state.form.date&&state.form.signature&&validGrades.includes(state.form.grade))}
+function guardDaily(){if(!validPersonal()){notice("Please complete and save the Personal Form before choosing lunch.","error");go("personal");return}go("daily")}
+function mealSubtotal(){return state.daily.reduce((sum,item)=>sum+state.prices[item.size]*item.qty,0)}
+function drinkPrice(){return state.waterAccepted?0:(state.drink?.price||0)}
+function total(){return mealSubtotal()+drinkPrice()}
+function drinkLabel(){return state.waterAccepted?"Water included":state.drink?`${state.drink.name} · ${fmt(state.drink.price)}`:"Drink selection required"}
+function renderMeals(){
+  document.getElementById("daily-meals").innerHTML=meals.map(m=>`<article class="meal-card" id="card-${m.id}"><div class="p-4"><h2 class="font-bold">${m.name}</h2><p class="mt-2 text-xs leading-5 text-slate-600">${m.desc}</p><p class="mt-2 text-xs font-semibold text-[#1f6b45]">${m.note}</p><p class="mt-2 rounded-lg bg-[#eff5ea] px-2 py-1 text-xs font-bold text-[#1f6b45]">Water included</p><div class="mt-3 grid grid-cols-3 gap-1">${["Small","Medium","Large"].map(s=>`<div class="size-choice relative"><input id="${m.id}-${s}" name="${m.id}-size" type="radio" value="${s}" onchange="selectSize('${m.id}','${s}')"><label for="${m.id}-${s}">${s}<br>${fmt(state.prices[s])}</label></div>`).join("")}</div><div class="mt-3 flex items-center justify-between"><label class="text-xs font-bold" for="qty-${m.id}">Qty</label><div class="flex items-center gap-2"><button class="focus-ring grid h-7 w-7 place-items-center rounded bg-[#eff5ea]" type="button" aria-label="Reduce ${m.name}" onclick="changeQty('${m.id}',-1)">−</button><span id="qty-${m.id}" class="w-4 text-center font-bold">1</span><button class="focus-ring grid h-7 w-7 place-items-center rounded bg-[#eff5ea]" type="button" aria-label="Increase ${m.name}" onclick="changeQty('${m.id}',1)">+</button></div></div><button class="focus-ring mt-3 w-full rounded-xl bg-[#1f6b45] px-3 py-2 text-sm font-bold text-white" type="button" onclick="addMeal('${m.id}')">Add to order</button></div></article>`).join("");
+}
+function renderDrinks(){document.getElementById("drink-options").innerHTML=drinks.map((d,i)=>`<div class="drink-choice relative"><input id="drink-${i}" name="drink" type="radio" value="${i}" ${state.drink?.name===d.name?"checked":""}><label for="drink-${i}">${d.name}<br><span class="text-xs">${fmt(d.price)}</span></label></div>`).join("");document.querySelectorAll('input[name="drink"]').forEach(input=>input.addEventListener("change",()=>{state.drink=drinks[+input.value];renderTotal()}))}
+function selectSize(id,size){draft[id]={...(draft[id]||{qty:1}),size}}
+function changeQty(id,delta){draft[id]={...(draft[id]||{size:""}),qty:Math.max(1,(draft[id]?.qty||1)+delta)};document.getElementById("qty-"+id).textContent=draft[id].qty}
+function addMeal(id){const d=draft[id];if(!d?.size){notice("Choose a meal size before adding it to your order.","error");return}const meal=meals.find(m=>m.id===id),found=state.daily.find(x=>x.id===id&&x.size===d.size);if(found)found.qty+=d.qty;else state.daily.push({...meal,...d});document.getElementById("card-"+id).classList.add("selected");renderTotal();notice(meal.name+" added to your daily order.")}
+function renderTotal(){document.getElementById("daily-total").textContent=fmt(total());document.getElementById("daily-water-line").textContent=drinkLabel()}
+function baseRecord(type){return {customer_name:state.form?.name||"",customer_date:state.form?.date||"",customer_signature:state.form?.signature||"",customer_grade:state.form?.grade||"",order_type:type,selected_meals:"",meal_size:"",quantities:"",subtotal:0,delivery_address:"",delivery_parish:"",delivery_instructions:"",order_reference:"",created_at:new Date().toISOString(),drink_choice:drinkLabel(),drink_price:drinkPrice()}}
+async function save(record){
+  if(!window.dataSdk || typeof window.dataSdk.create !== "function"){ return true; }
+  const result=await window.dataSdk.create(record);
+  if(!result.isOk){notice("We could not save that information. Please try again.","error");return false}
+  return true;
+}
+
+document.getElementById("personal-form").addEventListener("input",()=>{
+  const complete=["customer-name","customer-date","customer-signature","customer-grade"].every(id=>document.getElementById(id).value.trim());
+  const b=document.getElementById("personal-submit");
+  b.disabled=!complete;
+  b.classList.toggle("bg-[#1f6b45]",complete);
+  b.classList.toggle("bg-[#94a89a]",!complete);
+});
+document.getElementById("personal-form").addEventListener("submit",async e=>{
+  e.preventDefault();const form={name:document.getElementById("customer-name").value.trim(),date:document.getElementById("customer-date").value,signature:document.getElementById("customer-signature").value.trim(),grade:document.getElementById("customer-grade").value};
+  if(!form.name||!form.date||!form.signature||!validGrades.includes(form.grade)){const error=document.getElementById("personal-error");error.textContent="Please complete Name, Date, Signature, and select a valid Grade.";error.classList.remove("hidden");return}
+  const b=document.getElementById("personal-submit");b.disabled=true;state.form=form;const record=baseRecord("personal_form");Object.assign(record,{customer_name:form.name,customer_date:form.date,customer_signature:form.signature,customer_grade:form.grade});
+  if(await save(record)){state.personal=true;notice("Personal form saved. Daily Lunch is now available.");go("daily")}b.disabled=false;
+});
+document.querySelectorAll('input[name="water-choice"]').forEach(input=>input.addEventListener("change",()=>{
+  state.waterAccepted=input.value==="water";if(state.waterAccepted)state.drink=null;document.getElementById("drinks-section").classList.toggle("hidden",state.waterAccepted);if(!state.waterAccepted)renderDrinks();renderTotal();
+}));
+async function submitDaily(){
+  if(!state.daily.length){notice("Add at least one meal and size before continuing.","error");return}
+  if(!state.waterAccepted&&!state.drink){notice("Choose one drink because water was declined.","error");return}
+  state.lastOrder={type:"Daily Lunch",items:state.daily,subtotal:total(),drink:drinkLabel()};
+  const record=baseRecord("daily_lunch");Object.assign(record,{selected_meals:JSON.stringify(state.daily.map(x=>x.name)),meal_size:"Mixed",quantities:JSON.stringify(state.daily.map(x=>x.qty)),subtotal:total()});
+  if(await save(record)){notice("Daily lunch saved. Review your order.");go("summary")}
+}
+function renderDelivery(){
+  const gate=document.getElementById("delivery-gate"),form=document.getElementById("delivery-form");
+  if(!validPersonal()){form.classList.add("hidden");gate.innerHTML=`<strong>Complete your Personal Form first.</strong><p class="mt-2 text-sm">Home delivery requires a saved Name, Date, Signature, and Grade selection.</p><button class="focus-ring mt-3 rounded-lg bg-[#153d2c] px-4 py-2 font-bold text-white" type="button" onclick="go('personal')">Go to Personal Form</button>`;return}
+  if(!state.daily.length){form.classList.add("hidden");gate.innerHTML=`<strong>Select a Daily Lunch meal first.</strong><p class="mt-2 text-sm">Home delivery is available after at least one Daily Lunch meal is added.</p><button class="focus-ring mt-3 rounded-lg bg-[#153d2c] px-4 py-2 font-bold text-white" type="button" onclick="go('daily')">Go to Daily Lunch</button>`;return}
+  if(!state.waterAccepted&&!state.drink){form.classList.add("hidden");gate.innerHTML=`<strong>Choose your drink option first.</strong><p class="mt-2 text-sm">Water is included, or you can decline it and select one drink.</p><button class="focus-ring mt-3 rounded-lg bg-[#153d2c] px-4 py-2 font-bold text-white" type="button" onclick="go('daily')">Choose drink option</button>`;return}
+  gate.innerHTML="<strong>Delivery is available for your Daily Lunch order.</strong><p class='mt-1 text-sm'>Complete the address details below to request home delivery.</p>";form.classList.remove("hidden");
+  document.getElementById("delivery-meal").innerHTML=state.daily.map((x,i)=>`<option value="${i}">${x.name} · ${x.size} × ${x.qty}</option>`).join("");
+  document.getElementById("delivery-summary-line").textContent=`Selected order: ${state.daily.map(x=>`${x.name} (${x.size} ×${x.qty})`).join(", ")}. ${drinkLabel()}. Total: ${fmt(total())}`;
+}
+document.getElementById("delivery-form").addEventListener("submit",async e=>{
+  e.preventDefault();const address=document.getElementById("delivery-address").value.trim(),parish=document.getElementById("delivery-parish").value.trim(),instructions=document.getElementById("delivery-notes").value.trim();
+  if(!address||!parish){const error=document.getElementById("delivery-error");error.textContent="Address and Parish are required.";error.classList.remove("hidden");return}
+  state.delivery={address,parish,instructions,meal:+document.getElementById("delivery-meal").value};const record=baseRecord("delivery_request");Object.assign(record,{selected_meals:state.daily.map(x=>x.name).join(", "),meal_size:"Mixed",quantities:JSON.stringify(state.daily.map(x=>x.qty)),subtotal:total(),delivery_address:address,delivery_parish:parish,delivery_instructions:instructions});
+  if(await save(record)){state.lastOrder={type:"Home Delivery",items:state.daily,subtotal:total(),drink:drinkLabel()};notice("Home delivery request saved.");go("summary")}
+});
+function renderSummary(){
+  const box=document.getElementById("summary-content");if(!state.lastOrder){box.innerHTML="<p>No order has been selected yet. Choose a Daily Lunch to continue.</p>";return}
+  box.innerHTML=`<div class="grid gap-6 md:grid-cols-2"><div><p class="text-sm font-bold uppercase tracking-widest text-[#1f6b45]">Customer</p><h2 class="mt-2 text-xl font-bold">${state.form?.name||""}</h2><p class="text-slate-600">Grade: ${state.form?.grade||""}</p></div><div><p class="text-sm font-bold uppercase tracking-widest text-[#1f6b45]">Order</p><h2 class="mt-2 text-xl font-bold">${state.lastOrder.type}</h2><p class="text-slate-600">Total: <strong>${fmt(state.lastOrder.subtotal)}</strong></p></div></div><div class="mt-6 border-t pt-5"><h2 class="font-bold">Selected meals</h2><ul class="mt-2 space-y-2">${state.lastOrder.items.map(x=>`<li class="rounded-lg bg-[#eff5ea] px-3 py-2 text-sm">${x.name} · ${x.size} ×${x.qty} · Water included</li>`).join("")}</ul><p class="mt-3 rounded-lg bg-[#fff5ce] px-3 py-2 text-sm font-bold">${state.lastOrder.drink}</p></div>${state.delivery?`<div class="mt-5 rounded-xl bg-[#fff5ce] p-4 text-sm"><strong>Delivery:</strong> ${state.delivery.address}, ${state.delivery.parish}.${state.delivery.instructions?" "+state.delivery.instructions:""}</div>`:""}`;
+}
+async function confirmOrder(){
+  if(!state.lastOrder){notice("Select an order first.","error");go("daily");return}
+  const ref="EB-"+Date.now().toString().slice(-7),record=baseRecord("confirmed_order");Object.assign(record,{selected_meals:JSON.stringify(state.lastOrder.items.map(x=>x.name)),meal_size:"Mixed",quantities:JSON.stringify(state.lastOrder.items.map(x=>x.qty)),subtotal:state.lastOrder.subtotal,order_reference:ref,delivery_address:state.delivery?.address||"",delivery_parish:state.delivery?.parish||"",delivery_instructions:state.delivery?.instructions||""});
+  if(await save(record)){document.getElementById("confirmation-recap").textContent=`Order reference ${ref}. ${state.lastOrder.type} confirmed for ${state.form.name}; total ${fmt(state.lastOrder.subtotal)}. ${state.lastOrder.drink}.`;go("confirmation")}
+}
+function newOrder(){state.daily=[];state.waterAccepted=true;state.drink=null;state.delivery=null;state.lastOrder=null;document.getElementById("water-yes").checked=true;document.getElementById("drinks-section").classList.add("hidden");renderMeals();renderTotal();go("home");notice("Ready for a new order.")}
+document.querySelectorAll(".nav-item").forEach(button=>button.addEventListener("click",()=>{if(button.dataset.view==="daily")guardDaily();else go(button.dataset.view)}));
+const dataHandler={onDataChanged(data){state.records=data}};
+async function init(){if(window.dataSdk){const result=await window.dataSdk.init(dataHandler);if(!result.isOk)notice("Saved orders are temporarily unavailable. You can still browse the menu.","error")}}
+renderMeals();renderDrinks();renderTotal();init();lucide.createIcons();
+</script>
+</body></html>
